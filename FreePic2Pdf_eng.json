@@ -4,7 +4,7 @@
     "homepage": "https://www.cnblogs.com/stronghorse",
     "license": "Freeware",
     "architecture": {
-        "64bit": {
+        "32bit|64bit": {
             "url": "https://raw.githubusercontent.com/sqliuchang/strnghrs_packages/main/FreePic2Pdf_eng.zip",
             "hash": "4e3e3e1e5a8741d51fc182561725239ba3395daeaad5f013ff4cb1b6059351bf"
         }
