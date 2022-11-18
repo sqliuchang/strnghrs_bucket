@@ -1,0 +1,32 @@
+{
+    "version": "6.06",
+    "description": "Enhance scaned comics picture by brightness, contrast, gamma correction, resize, sharpen and blur. (Chinese version.)",
+    "homepage": "https://www.cnblogs.com/stronghorse",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://raw.githubusercontent.com/sqliuchang/strnghrs_packages/main/ComicEnhancerPro_chn.zip",
+            "hash": "f404d0136f76b19900831f722c579ffccf7213084d86ea4e8655a7dc15b558bf"
+        }
+    },
+    "pre_install": [
+    "# Create initial config files",
+    "if (!(Test-Path -Path \"$dir\\ComicEnhancerPro.ini\")) {",
+    "    (New-Item -ItemType \"file\" -Path \"$dir\" -Name \"ComicEnhancerPro.ini\") | Out-Null",
+    "}",
+    "if (!(Test-Path -Path \"$dir\\ComicEnhancerPro_Para.ini\")) {",
+    "    (New-Item -ItemType \"file\" -Path \"$dir\" -Name \"ComicEnhancerPro_Para.ini\") | Out-Null",
+    "}"
+    ],
+    "bin": "ComicEnhancerPro.exe",
+    "shortcuts": [
+        [
+            "ComicEnhancerPro.exe",
+            "ComicEnhancerPro_chn"
+        ]
+    ],
+    "persist": [
+        "ComicEnhancerPro.ini",
+        "ComicEnhancerPro_Para.ini"
+    ]
+}
