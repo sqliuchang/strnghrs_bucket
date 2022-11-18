@@ -3,12 +3,8 @@
     "description": "A freeware to convert image (TIFF, JPG, JP2, PNG, GIF, webp and BMP) files into PDF.(English version)",
     "homepage": "https://www.cnblogs.com/stronghorse",
     "license": "Freeware",
-    "architecture": {
-        "32bit|64bit": {
-            "url": "https://raw.githubusercontent.com/sqliuchang/strnghrs_packages/main/FreePic2Pdf_eng.zip",
-            "hash": "4e3e3e1e5a8741d51fc182561725239ba3395daeaad5f013ff4cb1b6059351bf"
-        }
-    },
+    "url": "https://raw.githubusercontent.com/sqliuchang/strnghrs_packages/main/FreePic2Pdf_eng.zip",
+    "hash": "4e3e3e1e5a8741d51fc182561725239ba3395daeaad5f013ff4cb1b6059351bf",
     "pre_install": [
     "# Create initial config files",
     "if (!(Test-Path -Path \"$dir\\FreePic2Pdf.ini\")) {",
