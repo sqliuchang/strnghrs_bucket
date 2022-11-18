@@ -9,6 +9,15 @@
             "hash": "f404d0136f76b19900831f722c579ffccf7213084d86ea4e8655a7dc15b558bf"
         }
     },
+    "pre_install": [
+    "# Create initial config files",
+    "if (!(Test-Path -Path \"$persist_dir\\ComicEnhancerPro.ini\")) {",
+    "    (New-Item -ItemType \"file\"  \"$persits_dir\\ComicEnhancerPro.ini\") | Out-Null",
+    "}",
+    "if (!(Test-Path -Path \"$persist_dir\\ComicEnhancerPro_Para.ini\")) {",
+    "    (New-Item -ItemType \"file\"  \"$persits_dir\\ComicEnhancerPro_Para.ini\") | Out-Null",
+    "}"
+    ],
     "bin": "ComicEnhancerPro.exe",
     "shortcuts": [
         [
@@ -17,6 +26,7 @@
         ]
     ],
     "persist": [
-        "ComicEnhancerPro.ini"
+        "ComicEnhancerPro.ini",
+        "ComicEnhancerPro_Para.ini"
     ]
 }
