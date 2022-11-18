@@ -11,10 +11,10 @@
     },
     "pre_install": [
     "# Create initial config files",
-    "if (!(Test-Path -Path \"$persist_dir\\ComicEnhancerPro.ini\")) {",
+    "if (!(Test-Path -Path \"$dir\\ComicEnhancerPro.ini\")) {",
     "    (New-Item -ItemType \"file\" -Path \"$persist_dir\" -Name \"ComicEnhancerPro.ini\") | Out-Null",
     "}",
-    "if (!(Test-Path -Path \"$persist_dir\\ComicEnhancerPro_Para.ini\")) {",
+    "if (!(Test-Path -Path \"$dir\\ComicEnhancerPro_Para.ini\")) {",
     "    (New-Item -ItemType \"file\" -Path \"$persist_dir\" -Name \"ComicEnhancerPro_Para.ini\") | Out-Null",
     "}"
     ],
