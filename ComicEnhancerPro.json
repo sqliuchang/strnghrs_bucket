@@ -1,6 +1,6 @@
 {
     "version": "6.06",
-    "description": "Enhance scaned comics picture by brightness, contrast, gamma correction, resize, sharpen and blur. (Chinese version.)",
+    "description": "Enhance scaned comics picture by brightness, contrast, gamma correction, resize, sharpen and blur. (Chinese version)",
     "homepage": "https://www.cnblogs.com/stronghorse",
     "license": "Freeware",
     "architecture": {
@@ -22,7 +22,7 @@
     "shortcuts": [
         [
             "ComicEnhancerPro.exe",
-            "ComicEnhancerPro_chn"
+            "ComicEnhancerPro"
         ]
     ],
     "persist": [
